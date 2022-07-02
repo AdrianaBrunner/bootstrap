@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Cadastre Seu Curriculo</title>
+</head>
+
+<body class="p-3">
+    <div class="card">
+        <div class="card-body">
+            <form>
+                <fieldset class="mb-3">
+                    <legend>Informações Básicas</legend>
+                    <label>Nome </label>
+                    <input type="text" class="form-control" placeholder="Insira seu nome">
+                    <label>Sobrenome </label>
+                    <input type="text" class="form-control" placeholder="Insira seu sobrenome">
+                    <label>E-mail </label>
+                    <input type="email" class="form-control" placeholder="Insira seu email">
+                </fieldset>
+
+                <fieldset class="my-3">
+                    <legend>Endereço</legend>
+
+                    <div class="form-group">
+                        <label class="form-label">Selecione seu estado</label>
+                        <select id="estadoBrasil">
+                            <option>ES</option>
+                            <option>SC</option>
+                            <option>SP</option>
+                            <option>RJ</option>
+                            <option>MG</option>
+
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Insira sua cidade </label>
+                        <input type="text" class="form-control" placeholder="Informe sua cidade">
+                    </div>
+                </fieldset>
+
+                <fieldset class="my-3">
+                    <legend class="">Experiência Profissional</legend>
+
+                    <div class="form-group my-3">
+                        <input class="form-check-input" type="checkbox">
+                        <label>HTML5</label>
+                        <input class="form-check-input" type="checkbox">
+                        <label>JavaScript</label>
+                        <input class="form-check-input" type="checkbox">
+                        <label>CSS</label>
+
+                    </div>
+
+                    <div class="form-group my-3">
+                        <input type="file" class="form-control-sm w-25">
+                        <div class="small text-muted">Anexe o seu currículo</div>
+                    </div>
+                </fieldset>
+
+                <button class="btn btn-primary">Finalizar Cadastro</button>
+
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
