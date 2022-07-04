@@ -11,37 +11,27 @@
 			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
 			crossorigin="anonymous"
 		/>
-		<title>Border</title>
+		<title>Alinhamento</title>
 
-		<style>
-			section {
-				display: flex;
-				justify-content: space-between;
-			}
-
-			div {
-				height: 200px;
-				width: 200px;
-			}
-
-            #pill{
-               width: 400px; 
+        <style>
+            section{
+                background: lightblue;
+                height: 70vh;
             }
-		</style>
+
+            div{
+                height: 100px;
+            }
+        </style>
 	</head>
 	<body>
-		<section>
-			<!-- <div class="bg-light border border-primary mx-2"></div>
-			<div class="bg-light border-top border-5 border-danger mx-2"></div>
-			<div class="bg-light border-end border-5 border-primary mx-2"></div>
-			<div class="bg-light border-start border-5 border-warning mx-2"></div> -->
-
-            <div id="circle" class="rounded-circle bg-primary mx-3"></div>
-            <div id="pill" class="rounded-pill bg-primary"></div>
-            <div class="rounded-start rounded-3 bg-primary mx-3"></div>
-            <div class="rounded-5 bg-primary mx-3"></div>
-
-		</section>
+		<main class="container-fluid">
+			<section class="row justify-content-around align-items-center">
+				<div class="p-3 col-3 bg-primary align-self-start">1</div>
+				<div class="p-3 col-3 bg-success">2</div>
+				<div class="p-3 col-3 bg-warning align-self-end">3</div>
+			</section>
+		</main>
 
 		<!-- Import Js via CDN (acima do </body>)  -->
 		<script

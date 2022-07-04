@@ -11,36 +11,44 @@
 			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
 			crossorigin="anonymous"
 		/>
-		<title>Border</title>
+		<title>Bootstrap</title>
 
 		<style>
 			section {
-				display: flex;
-				justify-content: space-between;
+				height: 800px;
 			}
 
 			div {
-				height: 200px;
+				background: linear-gradient(to bottom right, #a600ff, #ff00e6);
 				width: 200px;
+				height: 200px;
 			}
 
-            #pill{
-               width: 400px; 
+            #divMenor{
+                height: 100px;
             }
 		</style>
 	</head>
+    <!--
+        Classes FlexBox:
+        .flex-row
+        .flex-column
+        .justify-content-start
+        .justify-content-end
+        .justify-content-center
+        .justify-content-between
+        .justify-content-around
+        .justify-content-evenly
+        .align-items-start
+        .align-items-end
+        .align-items-center
+        .align-items-baseline
+    -->
 	<body>
-		<section>
-			<!-- <div class="bg-light border border-primary mx-2"></div>
-			<div class="bg-light border-top border-5 border-danger mx-2"></div>
-			<div class="bg-light border-end border-5 border-primary mx-2"></div>
-			<div class="bg-light border-start border-5 border-warning mx-2"></div> -->
-
-            <div id="circle" class="rounded-circle bg-primary mx-3"></div>
-            <div id="pill" class="rounded-pill bg-primary"></div>
-            <div class="rounded-start rounded-3 bg-primary mx-3"></div>
-            <div class="rounded-5 bg-primary mx-3"></div>
-
+		<section class="bg-light d-flex flex-row justify-content-around align-items-baseline">
+			<div class="m-3 rounded-circle"></div>
+			<div id="divMenor" class="m-3 rounded-circle"></div>
+			<div class="m-3 rounded-circle"></div>
 		</section>
 
 		<!-- Import Js via CDN (acima do </body>)  -->
